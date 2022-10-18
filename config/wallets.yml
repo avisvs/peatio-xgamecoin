@@ -1,0 +1,47 @@
+- name:             Xgamecoin Deposit Wallet
+  blockchain_key:   xgame
+  currency_id:      xgame
+  # Address where deposits will be collected to.
+  # IMPORTANT:  Use Cash Address Format
+  address:          'xgametest:XMNu7RZeSJMTWLYsGkJCoTvTj1Uata2AMg'  # IMPORTANT: Always wrap this value in quotes!
+  kind:             deposit       # Wallet kind (deposit, hot, warm, cold or fee).
+  nsig:             1             # Number of signatures required for performing withdraw.
+  max_balance:      0.0
+  status:           active
+  gateway:          xgamecoind  # Gateway client name.
+  settings:
+    #
+    # Xgamecoind gateway client settings.
+    uri:          http://user:password@127.0.0.1:55466
+
+- name:             Xgamecoin Hot Wallet
+  blockchain_key:   xgame
+  currency_id:      xgame
+  # Address where deposits will be collected to.
+  # IMPORTANT:  Use Cash Address Format
+  address:          'xgametest:XMNu7RZeSJMTWLYsGkJCoTvTj1Uata2AMg'  # IMPORTANT: Always wrap this value in quotes!
+  kind:             hot     # Wallet kind (deposit, hot, warm, cold or fee).
+  nsig:             1       # Number of signatures required for performing withdraw.
+  max_balance:      5.0
+  status:           active
+  gateway:          xgamecoind   # Gateway client name.
+  settings:
+    #
+    # Xgamecoind gateway client settings.
+    uri:          http://user:password@127.0.0.1:55466
+
+- name:             Xgamecoin Warm Wallet
+  blockchain_key:   xgame
+  currency_id:      xgame
+  # Address where deposits will be collected to.
+  # IMPORTANT:  Use Cash Address Format
+  address:          'xgametest:XMNu7RZeSJMTWLYsGkJCoTvTj1Uata2AMg'  # IMPORTANT: Always wrap this value in quotes!
+  kind:             warm    # Wallet kind (deposit, hot, warm, cold or fee).
+  nsig:             1       # Number of signatures required for performing withdraw.
+  max_balance:      50.0
+  status:           active
+  gateway:          xgamecoind   # Gateway client name.
+  settings:
+    #
+    # Xgamecoind gateway client settings.
+    uri:          http://user:password@127.0.0.1:55466
